@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page 1</title>
+  <!-- include necessary CSS and JavaScript files -->
+<style>
+  /* Use a variable for the common padding top value */
+:root {
+  --common-padding-top: 25px;
+}
+
+/* Use a mixin for the common flexbox styles */
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Define styles for the #three section */
+#three {
+  @include flex-center;
+  flex-direction: column;
+  padding-top: var(--common-padding-top);
+  padding-bottom: 15px; 
+}
+
+/* Define styles for the .container section */
+.container {
+  @include flex-center;
+  flex-direction: column;
+  padding-top: var(--common-padding-top);
+  padding-bottom: 50px;
+  min-height: calc(100vh - 200px);
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Adjust container styles for smaller screens */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-top: 50px;
+    height: auto;
+    max-height: none;
+  }
+}
+
+/* Adjust container styles for even smaller screens */
+@media only screen and (max-width: 480px) {
+  .container {
+    padding-top: 30px;
+  }
+}
+
+/* Define styles for the link list */
+.link-list {
+  @include flex-center;
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.link-item {
+  margin: 0 10px;
+}
+
+.link-item a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Define styles for headings */
+h1, h2, h3 {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+/* Define font sizes for various elements */
+ul, ol {
+  font-size: 25px;
+}
+
+p {
+  font-size: 24px;
+}
+
+a {
+  font-size: 25px;
+}
+
+/* Define styles for unordered lists */
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+h2 {
+  margin-top: var(--common-padding-top);
+  padding-bottom: 5px;
+  font-size: 40px;
+  padding-top: 10px;
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+h1 {
+  margin-top: 80px;
+  font-size: 30px;
+}
+
+/* Adjust padding for smaller screens */
+@media only screen and (max-width: 768px) {
+  #three {
+    padding-top: 50px;
+  }
+}
+
+/* Adjust padding for even smaller screens */
+@media only screen and (max-width: 480px) {
+  #three {
+    padding-top: 30px;
+  }
+}
+</style> 
+<head>
+  <meta charset="UTF-8">
+  <title>EFL student's Toeic test mistake analysis and error tracking system establishment</title>
+  <style>
+    /* Add your CSS styling here */
+  </style>
+</head>
+
+<body>
+  <section id="three" class="main style1 special">
+    <div class="container">
+      <header class="major">
+        <h2>EFL student's Toeic test mistake analysis and error tracking system establishment</h2>    
+      </header> 
+      <div class="row">
+        <div class="col-12">
+          <iframe title="ToeicFinalBi" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiODkyYWNkOGUtOWNiMi00NzE0LTgwMDctNWMwZGVhY2RkNjNmIiwidCI6ImIwOGFjMWFiLTVlZDgtNDZhOC1hODFmLTYzNmU1NmJiNTdhZiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
+
+          <h2>Project Objectives</h2>
+          <p><strong>Project aims to analyze errors made by a student in TOEIC reading part 5 - 6 to provide insights for performance improvement. By identifying common errors, strategies can be developed to help the student improve their scores.</strong></p>
+
+          <h3>Analysis Charts and Tools</h3>
+          <ul>
+            <li>Donut chart to see error distribution throughout mistake type</li>
+            <li>Column chart to analyze mistake frequency in each topic</li>
+            <li>Treemap chart and drill-down function to analyze mistake frequency within part of speech and subtype group</li>
+            <li>Card charts to show total mistake count by error type</li>
+          </ul>
+
+          <h3>Data Collection and Preparation</h3>
+          <ul>
+            <li>Collect TOEIC test scores and error data from mock tests</li>
+            <li>Organize data in a table with error type, subtype, part of speech, and topic</li>
+            <li>Clean and check data for errors such as missing data and outliers</li>
+          </ul>
+
+          <h3>Data Analysis</h3>
+          <ul>
+            <li>Create a pivot table in Excel to summarize data by section and error type.</li>
+            <li>Use conditional formatting to highlight common errors.</li>
+            <li>Use charts and graphs to visualize data and identify patterns.</li>
+            <li>Use Power BI to create interactive dashboards with filters for error type, part of speech, and topic.</li>
+          </ul>
+
+          <h3>Insights and Recommendations</h3>
+          <ul>
+            <li>Develop strategies to address these errors with targeted practice exercises</li>
+            <li>Provide feedback to the student on their performance and progress</li>
+            <li>Monitor effectiveness of strategies and make adjustments as needed</li>
+            <li>Track and update student mistakes using Excel</li>
+          </ul>
+
+          <h2>Project Results</h2>
+          <h3>Data Analysis using Excel</h3>
+<p><a><strong>This analysis includes using pivot tables, charts, graphs, and dashboard visualizations to identify patterns and trends and furthermore track student's progress.</strong></a></p>
+<div class="col-12">
+  <span class="image fit"><img src="images/toeicexceldashboardfull.png" alt="" /></span>
+  <ul class="actions special">
+  </ul>
+</div>
+
+<p><ul>
+  <li><a>Total number of mistakes was broken down by “mistake type” to find which type is more difficult</a></li>
+</ul></p>
+<div class="col-12">
+  <span class="image fit"><img src="images/toeicexceldonutchart.png" alt="" /></span>
+  <ul class="actions special">
+  </ul>
+</div>
+
+<p><ul>
+  <li><a>All mistakes were broken down by "subtype group" to which part of speech it belonged to. <br/>Furthermore, to analyze data trends within parts of speech a slicer is used to filter through all the charts in a dashboard</a></li>
+</ul></p>
+<div class="col-12">
+  <span class="image fit"><img src="images/toeicexcelcolumnchart.png" alt="" /></span>
+  <ul class="actions special">
+  </ul>
+</div>
+
+<p><ul>
+  <li><a>Errors were also analyzed based on their frequency in each topic to identify areas where the student needs improvement</a></li>
+</ul></p>
+<div class="col-12">
+  <span class="image fit"><img src="images/toeicexcelbarchart.png" alt="" /></span>
+  <ul class="actions special">
+  </ul>
+</div>
+
+<div class="col-12">
+        <span class="image fit"><img src="images/toeicexcelstackedchart.png" alt="" /></span>
+        <div class="col-12">
+        <h3>Conclusion</h3>
+        <p>The project successfully identified and addressed the errors made by the student in their TOEIC test. Targeted strategies and exercises based on the findings were developed and implemented, resulting in the student's overall performance improvement in subsequent tests. The project will continue to track and analyze the student's mistakes to ensure continued improvement and growth in their English language skills through TOEIC.</p>
+        <p>In addition to achieving the project goals, the project also provided valuable experience and skills in data analysis. Through the process of <strong>data collection, preparation, and analysis</strong>, the use of <strong>Excel and Power BI</strong> to manage and analyze data was effectively demonstrated. The use of <strong>pivot tables, charts, graphs, and dashboard visualizations to identify patterns and trends</strong> was also demonstrated, as well as developing targeted strategies to address specific areas of weakness.</p>
+      </div>
+  </div>
+  
+  </section>
+</body>
+</html>

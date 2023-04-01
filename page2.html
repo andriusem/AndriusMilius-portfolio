@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page 2</title>
+  <!-- include necessary CSS and JavaScript files -->
+<style>
+  /* Use a variable for the common padding top value */
+:root {
+  --common-padding-top: 25px;
+}
+
+/* Use a mixin for the common flexbox styles */
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Define styles for the #three section */
+#three {
+  @include flex-center;
+  flex-direction: column;
+  padding-top: var(--common-padding-top);
+  padding-bottom: 15px; 
+}
+
+/* Define styles for the .container section */
+.container {
+  @include flex-center;
+  flex-direction: column;
+  padding-top: var(--common-padding-top);
+  padding-bottom: 50px;
+  min-height: calc(100vh - 200px);
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Adjust container styles for smaller screens */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-top: 50px;
+    height: auto;
+    max-height: none;
+  }
+}
+
+/* Adjust container styles for even smaller screens */
+@media only screen and (max-width: 480px) {
+  .container {
+    padding-top: 30px;
+  }
+}
+
+/* Define styles for the link list */
+.link-list {
+  @include flex-center;
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.link-item {
+  margin: 0 10px;
+}
+
+.link-item a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Define styles for headings */
+h1, h2, h3 {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+/* Define font sizes for various elements */
+ul, ol {
+  font-size: 25px;
+}
+
+p {
+  font-size: 24px;
+}
+
+a {
+  font-size: 25px;
+}
+
+/* Define styles for unordered lists */
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+h2 {
+  margin-top: var(--common-padding-top);
+  padding-bottom: 10px;
+  font-size: 40px;
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+h1 {
+  margin-top: 80px;
+  font-size: 35px;
+}
+
+/* Adjust padding for smaller screens */
+@media only screen and (max-width: 768px) {
+  #three {
+    padding-top: 50px;
+  }
+}
+
+/* Adjust padding for even smaller screens */
+@media only screen and (max-width: 480px) {
+  #three {
+    padding-top: 30px;
+  }
+}
+</style> 
+<head>
+  <meta charset="UTF-8">
+  <title>EFL student's Toeic test mistake analysis and error tracking system establishment</title>
+</head>
+<body>
+  <section id="three" class="main style1 special">
+    <div class="container">
+      <header class="major">
+        <h2>Attendance Analysis for Non-Profit Assistance Program</h2>    
+      </header> 
+      <div class="row">
+        <div class="col-12">
+          <iframe title="KAZ - Page 1" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiZjVkYTg3ODUtMDI0Ny00MjE2LWFkZDEtZmE5YWI1MWJlYzdjIiwidCI6ImIwOGFjMWFiLTVlZDgtNDZhOC1hODFmLTYzNmU1NmJiNTdhZiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>
+          <h1>Project Objectives</h1>
+          <p><strong>This project involves analyzing the attendance  of participation in a non-profit project that assists low-income individuals with administrative tasks, job searches and other public affairs. The goal is to provide valuable insights that can help improve the organization's services. </strong></p>
+
+
+          <h3>Details to achieving project objectives</h3>
+          <ul>
+            <li>Analyzing the attendance and retention rates of participation for the non-profit project</li>
+            <li>Identifying one-time attendees versus returning participants</li>
+            <li>Grouping the data by day of the week to count the number of attendees on each day</li>
+            <li>Extracting the day of the week from the "Date" column in Excel using Power Query</li>
+            <li>Creating an interactive report using Power BI to summarize the insights gained from the data analysis</li>
+          </ul>
+
+          <h3>Project execution steps</h3>
+          <ol>
+            <li><strong>Data Entry:</strong> Attendance data was manually entered into the "List" workbook using Exce.</li>
+            <li><strong>Data Cleaning: </strong>The data was cleaned in Excel by checking names for errors or typos and removing irrelevant data.</li>
+            <li><strong> Transformation:</strong> Power Query was used to transform the data by extracting the day of the week from the "Date" column and identifying one-time attendees versus returning ones.</li>
+            <li><strong>Data Analysis:</strong>  DAX was used in Power BI to create measures that calculated the total number of attendees, total number of days attended, number of one-time attendees, number of returning attendees, percentage of one-time attendees and returning attendees.</li>
+            <li><strong>Data Visualization:</strong> Power BI was used to create visualizations, including a bar chart to show the total number of visits by day of the week, a column chart to show total number of visits by month, a treemap chart to show the number of one-time attendees versus returning attendees, a donut chart  to show the participant attendance since the project started until present day.</li>
+            <li><strong>Data Presentation:</strong>  An interactive report was created using Power BI to summarize the insights gained from the data analysis. The report included visualizations and a narrative to explain the patterns observed in the data. Drill-down functionality was used to make the report more interactive and informative.</li>
+          </ol>
+
+          <h1>Conclusion and Recommendations</h1>
+          <p>Based on the analysis of the attendance and retention rates for the non-profit project, <strong>it is recommended that the organization allocate its resources according to the busiest months and days of the week.</strong> By doing so, they can ensure that they are meeting the demand and providing assistance at highest quality.</p>
+          <p>Furthermore, <strong>it is recommended that the organization gathers a wider scope of information for future data analysis.</strong> This could include collecting demographic information about the clients, such as age, gender, and income level, to gain a better understanding of their needs and preferences. This additional data can be used to further refine the organization's services and improve the effectiveness of their programs.</p>
+          <p>In conclusion, this project has provided valuable insights into the attendance and retention rates of participants for the non-profit project. By utilizing Excel, Power Query, and Power BI, I was able to identify patterns and trends in the data that can inform decision-making and improve the organization's services. <strong> With the recommendations provided, the organization can continue to enhance their programs and better serve the needs for their project.</strong> </p>
+  
+  </section>
+</body>
+</html>
